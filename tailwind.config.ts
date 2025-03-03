@@ -4,11 +4,11 @@ import animate from "tailwindcss-animate";
 const config = {
   darkMode: "class",
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "./constants/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,js}",
+    "./components/**/*.{ts,tsx,js}",
+    "./app/**/*.{ts,tsx,js}",
+    "./src/**/*.{ts,tsx,js}",
+    "./constants/**/*.{ts,tsx,js}",
   ],
   prefix: "",
   theme: {
@@ -101,6 +101,11 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      borderRadius: {
+        'lg': '0.5rem',
+        'xl': '1rem',
+        '2xl': '1.5rem',
       },
     },
   },

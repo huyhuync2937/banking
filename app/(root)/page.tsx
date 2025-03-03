@@ -1,9 +1,10 @@
 import HeaderBox from "@/components/HeaderBox";
+import RightSideBar from "@/components/RightSideBar";
 import TotalbalanceBox from "@/components/TotalBalanceBox";
 import { redirect } from "next/navigation";
 
 export default async function Home() {
-  const loggedIn = { firstName: "Adrian" };
+  const loggedIn = { firstName: "Adrian" ,lastName:"JDB",email:"contract@gmail.com"};
   return (
     <section className="home">
       <div className="home-content">
@@ -20,6 +21,11 @@ export default async function Home() {
           totalCurrentBalance={1250.35}
           />
         </header>
+        <RightSideBar
+        user={loggedIn}
+        transactions={[]}
+        banks={[{currentBalance:500},{}]}
+        ></RightSideBar>
       </div>
     </section>
   );
